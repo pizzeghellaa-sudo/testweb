@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page identity for i18n engine -->
+  <meta name="i18n-page" content="products">
+
+  <!-- SEO (defaults; overwritten by i18n.js on load) -->
+  <title>Products — MedEquip Supply</title>
+  <meta name="description" content="Browse our full range of medical equipment categories: diagnostic imaging, surgical instruments, patient monitoring, infusion systems, sterilization, and mobility equipment.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Products — MedEquip Supply">
+  <meta property="og:description" content="Browse our full range of medical equipment categories for hospitals, clinics, and healthcare procurement teams.">
+  <meta property="og:url"         content="https://example.com/products.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       Navigation
+       ===================================================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation"
+         data-i18n-attr="aria-label:nav.ariaLabel">
+
+      <a href="index.html" class="nav__logo" aria-label="MedEquip Supply home"
+         data-i18n-attr="aria-label:nav.logoAriaLabel">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <rect x="7" y="2" width="4" height="14" rx="1" fill="#fff"/>
+            <rect x="2" y="7" width="14" height="4" rx="1" fill="#fff"/>
+          </svg>
+        </span>
+        MedEquip Supply
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links"
+              aria-label="Toggle navigation menu"
+              data-i18n-attr="aria-label:nav.toggleAriaLabel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="products.html" aria-current="page" data-i18n="nav.products">Products</a></li>
+        <li><a href="quality.html"  data-i18n="nav.quality">Quality</a></li>
+        <li><a href="about.html"    data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html"  data-i18n="nav.contact">Contact</a></li>
+        <li class="nav__cta-wrap">
+          <a href="contact.html" class="btn btn--primary nav__cta"
+             data-i18n="nav.cta">Get in Touch</a>
+        </li>
+      </ul>
+
+      <!-- Language switcher — always visible -->
+      <div class="lang-switcher" role="group" aria-label="Select language"
+           data-i18n-attr="aria-label:nav.langSwitcherLabel">
+        <button class="lang-switcher__btn" data-lang="en"
+                aria-current="true" type="button">EN</button>
+        <button class="lang-switcher__btn" data-lang="it"
+                aria-current="false" type="button">IT</button>
+      </div>
+
+      <div class="nav__cta-wrap">
+        <a href="contact.html" class="btn btn--primary nav__cta"
+           data-i18n="nav.cta">Get in Touch</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =====================================================
+         Page Header
+         ===================================================== -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header__inner">
+          <span class="section__label"
+                data-i18n="products.header.label">Our Products</span>
+          <h1 class="page-header__title"
+              data-i18n="products.header.title">Product Categories</h1>
+          <p class="page-header__sub"
+             data-i18n="products.header.sub">
+            A structured overview of the equipment categories we supply to hospitals,
+            clinics, and procurement teams. Contact us to request product specifications,
+            availability, and pricing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Product Categories
+         ===================================================== -->
+    <section class="section" aria-labelledby="categories-heading">
+      <div class="container">
+
+        <header class="section-header section-header--center">
+          <span class="section__label"
+                data-i18n="products.categories.sectionLabel">Full Portfolio</span>
+          <h2 class="section__heading" id="categories-heading"
+              data-i18n="products.categories.heading">What We Supply</h2>
+          <p class="section__sub"
+             data-i18n="products.categories.sub">
+            Each category below represents a range of equipment types we can source
+            and supply. Submit an enquiry to discuss your specific requirements.
+          </p>
+        </header>
+
+        <ul class="products-grid" role="list">
+
+          <!-- Diagnostic Imaging -->
+          <li>
+            <article class="category-card category-card--lg">
+              <div class="category-card__header">
+                <div class="category-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                  </svg>
+                </div>
+                <h3 class="category-card__name"
+                    data-i18n="categories.diagnosticName">Diagnostic Imaging</h3>
+              </div>
+              <p class="category-card__desc"
+                 data-i18n="categories.diagnosticDesc">
+                Ultrasound units, X-ray systems, and portable imaging devices for
+                clinical and hospital use.
+              </p>
+              <ul class="category-card__products" role="list">
+                <li data-i18n="products.diagnostic.item1">Portable ultrasound units</li>
+                <li data-i18n="products.diagnostic.item2">Digital X-ray systems</li>
+                <li data-i18n="products.diagnostic.item3">Fluoroscopy and C-arm systems</li>
+                <li data-i18n="products.diagnostic.item4">Computed radiography readers</li>
+              </ul>
+              <a href="contact.html" class="category-card__enquire">
+                <span data-i18n="products.enquireLink">Enquire about this category</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </li>
+
+          <!-- Surgical Instruments -->
+          <li>
+            <article class="category-card category-card--lg">
+              <div class="category-card__header">
+                <div class="category-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2 2 22l10-6 10 6L12 2Z"/>
+                  </svg>
+                </div>
+                <h3 class="category-card__name"
+                    data-i18n="categories.surgicalName">Surgical Instruments</h3>
+              </div>
+              <p class="category-card__desc"
+                 data-i18n="categories.surgicalDesc">
+                Procedure-grade instruments and sets for operating theatres and
+                outpatient facilities.
+              </p>
+              <ul class="category-card__products" role="list">
+                <li data-i18n="products.surgical.item1">General surgery instrument sets</li>
+                <li data-i18n="products.surgical.item2">Laparoscopic tools and trocars</li>
+                <li data-i18n="products.surgical.item3">Retractors and clamps</li>
+                <li data-i18n="products.surgical.item4">Electrosurgical equipment</li>
+              </ul>
+              <a href="contact.html" class="category-card__enquire">
+                <span data-i18n="products.enquireLink">Enquire about this category</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </li>
+
+          <!-- Patient Monitoring -->
+          <li>
+            <article class="category-card category-card--lg">
+              <div class="category-card__header">
+                <div class="category-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <h3 class="category-card__name"
+                    data-i18n="categories.monitoringName">Patient Monitoring</h3>
+              </div>
+              <p class="category-card__desc"
+                 data-i18n="categories.monitoringDesc">
+                Bedside monitors, pulse oximeters, and telemetry systems for continuous
+                patient observation.
+              </p>
+              <ul class="category-card__products" role="list">
+                <li data-i18n="products.monitoring.item1">Multiparameter bedside monitors</li>
+                <li data-i18n="products.monitoring.item2">Pulse oximeters</li>
+                <li data-i18n="products.monitoring.item3">Telemetry and remote monitoring systems</li>
+                <li data-i18n="products.monitoring.item4">Vital signs monitors for ward use</li>
+              </ul>
+              <a href="contact.html" class="category-card__enquire">
+                <span data-i18n="products.enquireLink">Enquire about this category</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </li>
+
+          <!-- Infusion Systems -->
+          <li>
+            <article class="category-card category-card--lg">
+              <div class="category-card__header">
+                <div class="category-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M5 9h14M7 5h10"/>
+                    <path d="M8 15c0 2.2 1.8 4 4 4s4-1.8 4-4"/>
+                  </svg>
+                </div>
+                <h3 class="category-card__name"
+                    data-i18n="categories.infusionName">Infusion Systems</h3>
+              </div>
+              <p class="category-card__desc"
+                 data-i18n="categories.infusionDesc">
+                IV pumps, infusion sets, and accessories designed for accurate and
+                safe fluid delivery.
+              </p>
+              <ul class="category-card__products" role="list">
+                <li data-i18n="products.infusion.item1">Volumetric infusion pumps</li>
+                <li data-i18n="products.infusion.item2">Syringe drivers</li>
+                <li data-i18n="products.infusion.item3">IV administration sets</li>
+                <li data-i18n="products.infusion.item4">Enteral feeding systems</li>
+              </ul>
+              <a href="contact.html" class="category-card__enquire">
+                <span data-i18n="products.enquireLink">Enquire about this category</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </li>
+
+          <!-- Sterilization & Disinfection -->
+          <li>
+            <article class="category-card category-card--lg">
+              <div class="category-card__header">
+                <div class="category-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  </svg>
+                </div>
+                <h3 class="category-card__name"
+                    data-i18n-html="categories.sterilName">Sterilization &amp; Disinfection</h3>
+              </div>
+              <p class="category-card__desc"
+                 data-i18n="categories.sterilDesc">
+                Autoclaves, sterilization pouches, and surface disinfection systems
+                for infection control.
+              </p>
+              <ul class="category-card__products" role="list">
+                <li data-i18n="products.steril.item1">Steam autoclaves</li>
+                <li data-i18n="products.steril.item2">Sterilization pouches and wraps</li>
+                <li data-i18n="products.steril.item3">Surface and equipment disinfectants</li>
+                <li data-i18n="products.steril.item4">Endoscope reprocessing systems</li>
+              </ul>
+              <a href="contact.html" class="category-card__enquire">
+                <span data-i18n="products.enquireLink">Enquire about this category</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </li>
+
+          <!-- Mobility & Rehabilitation -->
+          <li>
+            <article class="category-card category-card--lg">
+              <div class="category-card__header">
+                <div class="category-card__icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="5" r="2"/>
+                    <path d="M12 7v8"/>
+                    <path d="M8 21l4-6 4 6"/>
+                    <path d="M7 12h10"/>
+                  </svg>
+                </div>
+                <h3 class="category-card__name"
+                    data-i18n-html="categories.mobilityName">Mobility &amp; Rehabilitation</h3>
+              </div>
+              <p class="category-card__desc"
+                 data-i18n="categories.mobilityDesc">
+                Wheelchairs, walking aids, and rehabilitation equipment supporting
+                patient recovery programs.
+              </p>
+              <ul class="category-card__products" role="list">
+                <li data-i18n="products.mobility.item1">Standard and bariatric wheelchairs</li>
+                <li data-i18n="products.mobility.item2">Walking frames and crutches</li>
+                <li data-i18n="products.mobility.item3">Patient transfer aids</li>
+                <li data-i18n="products.mobility.item4">Physiotherapy rehabilitation equipment</li>
+              </ul>
+              <a href="contact.html" class="category-card__enquire">
+                <span data-i18n="products.enquireLink">Enquire about this category</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Enquiry Process
+         ===================================================== -->
+    <section class="section section--surface" aria-labelledby="process-heading">
+      <div class="container">
+
+        <header class="process__header">
+          <span class="section__label"
+                data-i18n="products.process.sectionLabel">How to Enquire</span>
+          <h2 class="section__heading" id="process-heading"
+              data-i18n="products.process.heading">Simple Enquiry Process</h2>
+          <p class="section__sub"
+             data-i18n="products.process.sub">
+            Our procurement support team guides you through every step — from
+            initial specification to delivery coordination.
+          </p>
+        </header>
+
+        <ol class="enquiry-steps" role="list">
+
+          <li class="enquiry-step">
+            <div class="enquiry-step__number" aria-hidden="true">1</div>
+            <h3 class="enquiry-step__title"
+                data-i18n="products.process.step1Title">Submit Your Requirements</h3>
+            <p class="enquiry-step__text"
+               data-i18n="products.process.step1Text">
+              Use our contact form or email us with your product category, estimated
+              quantities, and any applicable specifications or standards.
+            </p>
+          </li>
+
+          <li class="enquiry-step">
+            <div class="enquiry-step__number" aria-hidden="true">2</div>
+            <h3 class="enquiry-step__title"
+                data-i18n="products.process.step2Title">Receive a Response</h3>
+            <p class="enquiry-step__text"
+               data-i18n="products.process.step2Text">
+              Our team reviews your enquiry and responds with product availability,
+              documentation options, and indicative pricing within one business day.
+            </p>
+          </li>
+
+          <li class="enquiry-step">
+            <div class="enquiry-step__number" aria-hidden="true">3</div>
+            <h3 class="enquiry-step__title"
+                data-i18n="products.process.step3Title">Confirm and Coordinate</h3>
+            <p class="enquiry-step__text"
+               data-i18n="products.process.step3Text">
+              Once you approve the proposal, we coordinate delivery timelines,
+              logistics, and supply chain documentation for your records.
+            </p>
+          </li>
+
+        </ol>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Contact CTA Banner
+         ===================================================== -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 class="cta-banner__heading" id="cta-heading"
+            data-i18n="cta.heading">
+          Ready to source medical equipment for your facility?
+        </h2>
+        <p class="cta-banner__sub" data-i18n="cta.sub">
+          Send us your requirements and our team will respond with product
+          availability, specifications, and pricing details.
+        </p>
+        <a href="contact.html" class="btn btn--primary"
+           data-i18n="cta.btn">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       Footer
+       ===================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__brand-name">
+            <span aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <rect x="7" y="2" width="4" height="14" rx="1" fill="#1a6fa8"/>
+                <rect x="2" y="7" width="14" height="4" rx="1" fill="#1a6fa8"/>
+              </svg>
+            </span>
+            MedEquip Supply
+          </div>
+          <p class="footer__tagline" data-i18n="footer.tagline">
+            Quality-managed medical equipment supply for hospitals, clinics,
+            and healthcare procurement teams.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__col-title"
+               data-i18n="footer.navColTitle">Navigation</div>
+          <ul class="footer__links" role="list">
+            <li><a href="products.html" data-i18n="footer.navProducts">Products</a></li>
+            <li><a href="quality.html"  data-i18n-html="footer.navQuality">Quality &amp; Certifications</a></li>
+            <li><a href="about.html"    data-i18n="footer.navAbout">About Us</a></li>
+            <li><a href="contact.html"  data-i18n="footer.navContact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title"
+               data-i18n="footer.contactColTitle">Contact</div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9993;</span>
+            <span>info@medequipsupply.example</span>
+          </div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9742;</span>
+            <span>+1 (000) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9679;</span>
+            <span>123 Placeholder Street<br>City, Country</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__disclaimer" data-i18n="footer.disclaimer">
+          Product information is for healthcare professionals and procurement use only.
+          All product specifications and availability are subject to change without notice.
+        </p>
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2025</span>
+          <span data-i18n="footer.copyrightSuffix">MedEquip Supply. All rights reserved.</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

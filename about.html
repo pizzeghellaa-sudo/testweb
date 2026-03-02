@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page identity for i18n engine -->
+  <meta name="i18n-page" content="about">
+
+  <!-- SEO (defaults; overwritten by i18n.js on load) -->
+  <title>About Us — MedEquip Supply</title>
+  <meta name="description" content="Learn about MedEquip Supply — our mission, values, and commitment to quality-managed medical equipment supply for hospitals, clinics, and procurement teams.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="About Us — MedEquip Supply">
+  <meta property="og:description" content="Learn about MedEquip Supply — our mission, values, and commitment to quality-managed medical equipment supply.">
+  <meta property="og:url"         content="https://example.com/about.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       Navigation
+       ===================================================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation"
+         data-i18n-attr="aria-label:nav.ariaLabel">
+
+      <a href="index.html" class="nav__logo" aria-label="MedEquip Supply home"
+         data-i18n-attr="aria-label:nav.logoAriaLabel">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <rect x="7" y="2" width="4" height="14" rx="1" fill="#fff"/>
+            <rect x="2" y="7" width="14" height="4" rx="1" fill="#fff"/>
+          </svg>
+        </span>
+        MedEquip Supply
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links"
+              aria-label="Toggle navigation menu"
+              data-i18n-attr="aria-label:nav.toggleAriaLabel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+        <li><a href="quality.html"  data-i18n="nav.quality">Quality</a></li>
+        <li><a href="about.html"    aria-current="page" data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html"  data-i18n="nav.contact">Contact</a></li>
+        <li class="nav__cta-wrap">
+          <a href="contact.html" class="btn btn--primary nav__cta"
+             data-i18n="nav.cta">Get in Touch</a>
+        </li>
+      </ul>
+
+      <!-- Language switcher — always visible -->
+      <div class="lang-switcher" role="group" aria-label="Select language"
+           data-i18n-attr="aria-label:nav.langSwitcherLabel">
+        <button class="lang-switcher__btn" data-lang="en"
+                aria-current="true" type="button">EN</button>
+        <button class="lang-switcher__btn" data-lang="it"
+                aria-current="false" type="button">IT</button>
+      </div>
+
+      <div class="nav__cta-wrap">
+        <a href="contact.html" class="btn btn--primary nav__cta"
+           data-i18n="nav.cta">Get in Touch</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =====================================================
+         Page Header
+         ===================================================== -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header__inner">
+          <span class="section__label"
+                data-i18n="about.header.label">Our Story</span>
+          <h1 class="page-header__title"
+              data-i18n="about.header.title">About MedEquip Supply</h1>
+          <p class="page-header__sub"
+             data-i18n="about.header.sub">
+            A dedicated supplier of medical equipment to hospitals, clinics, and healthcare
+            procurement teams — built on transparency, traceability, and reliable service.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Mission & Story
+         ===================================================== -->
+    <section class="section" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="about-mission">
+
+          <div class="about-mission__content">
+            <span class="section__label"
+                  data-i18n="about.mission.sectionLabel">Our Mission</span>
+            <h2 class="section__heading" id="mission-heading"
+                data-i18n="about.mission.heading">Supplying Healthcare with Confidence</h2>
+            <p class="section__sub"
+               data-i18n="about.mission.sub">
+              We focus on quality-managed supply, clear documentation, and responsive support
+              — giving procurement teams the information they need at every stage.
+            </p>
+            <p class="about-mission__para"
+               data-i18n="about.mission.para1">
+              We supply medical equipment to healthcare providers, supporting procurement teams
+              with traceable, quality-managed products. Our processes are structured to provide
+              documentation, traceability, and compliance-ready records upon request.
+            </p>
+            <p class="about-mission__para"
+               data-i18n="about.mission.para2">
+              From initial enquiry to post-delivery follow-up, we work alongside your team to
+              match specifications, coordinate logistics, and ensure your facility receives
+              reliable, well-documented equipment.
+            </p>
+          </div>
+
+          <div class="about-mission__visual" aria-hidden="true">
+            <div class="hero__visual-placeholder">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                   stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M12 8v8M8 12h8"/>
+              </svg>
+              <p>Company image placeholder</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Values (reuses pillars grid)
+         ===================================================== -->
+    <section class="section section--surface" aria-labelledby="values-heading">
+      <div class="container">
+
+        <header class="pillars__header">
+          <span class="section__label"
+                data-i18n="about.values.sectionLabel">What We Stand For</span>
+          <h2 class="section__heading" id="values-heading"
+              data-i18n="about.values.heading">Our Core Values</h2>
+          <p class="section__sub"
+             data-i18n="about.values.sub">
+            Four principles that guide how we operate and how we serve our clients.
+          </p>
+        </header>
+
+        <div class="pillars__grid">
+
+          <article class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="pillar__heading"
+                data-i18n="about.values.value1Heading">Quality Management</h3>
+            <p class="pillar__text"
+               data-i18n="about.values.value1Text">
+              Our supply processes follow quality-managed procedures, with documentation
+              packages available for every product category.
+            </p>
+          </article>
+
+          <article class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="pillar__heading"
+                data-i18n="about.values.value2Heading">Regulatory Support</h3>
+            <p class="pillar__text"
+               data-i18n="about.values.value2Text">
+              We help procurement teams navigate documentation requirements, providing
+              declarations of conformity and traceability records as needed.
+            </p>
+          </article>
+
+          <article class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <polyline points="17 1 21 5 17 9"/>
+                <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                <polyline points="7 23 3 19 7 15"/>
+                <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+              </svg>
+            </div>
+            <h3 class="pillar__heading"
+                data-i18n="about.values.value3Heading">Reliable Supply Chain</h3>
+            <p class="pillar__text"
+               data-i18n="about.values.value3Text">
+              We maintain managed relationships with verified suppliers to ensure consistent
+              product availability and predictable lead times.
+            </p>
+          </article>
+
+          <article class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="pillar__heading"
+                data-i18n="about.values.value4Heading">Dedicated Service</h3>
+            <p class="pillar__text"
+               data-i18n="about.values.value4Text">
+              Our team is responsive, accessible, and focused on long-term client
+              relationships — not single transactions.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Commitment
+         ===================================================== -->
+    <section class="section" aria-labelledby="commitment-heading">
+      <div class="container">
+        <span class="section__label"
+              data-i18n="about.commitment.sectionLabel">Our Commitment</span>
+        <h2 class="section__heading" id="commitment-heading"
+            data-i18n="about.commitment.heading">What You Can Expect from Us</h2>
+        <p class="section__sub"
+           data-i18n="about.commitment.sub">
+          We make specific commitments to every client we work with.
+        </p>
+
+        <ul class="commitment__list" role="list">
+
+          <li class="commitment-point">
+            <div class="commitment-point__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <p class="commitment-point__text"
+               data-i18n="about.commitment.point1">
+              Documentation on request — product specifications, declarations of conformity,
+              and supply chain records available for every order.
+            </p>
+          </li>
+
+          <li class="commitment-point">
+            <div class="commitment-point__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <p class="commitment-point__text"
+               data-i18n="about.commitment.point2">
+              Pre-sales technical support — our team assists with specification matching,
+              product comparison, and procurement guidance before you commit.
+            </p>
+          </li>
+
+          <li class="commitment-point">
+            <div class="commitment-point__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                   stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <p class="commitment-point__text"
+               data-i18n="about.commitment.point3">
+              Post-delivery follow-up — we check in after delivery to confirm receipt,
+              address any issues, and support your acceptance process.
+            </p>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Contact CTA Banner
+         ===================================================== -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 class="cta-banner__heading" id="cta-heading"
+            data-i18n="cta.heading">
+          Ready to source medical equipment for your facility?
+        </h2>
+        <p class="cta-banner__sub" data-i18n="cta.sub">
+          Send us your requirements and our team will respond with product
+          availability, specifications, and pricing details.
+        </p>
+        <a href="contact.html" class="btn btn--primary"
+           data-i18n="cta.btn">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       Footer
+       ===================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__brand-name">
+            <span aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <rect x="7" y="2" width="4" height="14" rx="1" fill="#1a6fa8"/>
+                <rect x="2" y="7" width="14" height="4" rx="1" fill="#1a6fa8"/>
+              </svg>
+            </span>
+            MedEquip Supply
+          </div>
+          <p class="footer__tagline" data-i18n="footer.tagline">
+            Quality-managed medical equipment supply for hospitals, clinics,
+            and healthcare procurement teams.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__col-title"
+               data-i18n="footer.navColTitle">Navigation</div>
+          <ul class="footer__links" role="list">
+            <li><a href="products.html" data-i18n="footer.navProducts">Products</a></li>
+            <li><a href="quality.html"  data-i18n-html="footer.navQuality">Quality &amp; Certifications</a></li>
+            <li><a href="about.html"    data-i18n="footer.navAbout">About Us</a></li>
+            <li><a href="contact.html"  data-i18n="footer.navContact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title"
+               data-i18n="footer.contactColTitle">Contact</div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9993;</span>
+            <span>info@medequipsupply.example</span>
+          </div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9742;</span>
+            <span>+1 (000) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9679;</span>
+            <span>123 Placeholder Street<br>City, Country</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__disclaimer" data-i18n="footer.disclaimer">
+          Product information is for healthcare professionals and procurement use only.
+          All product specifications and availability are subject to change without notice.
+        </p>
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2025</span>
+          <span data-i18n="footer.copyrightSuffix">MedEquip Supply. All rights reserved.</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

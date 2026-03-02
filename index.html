@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>MedEquip Supply — Medical Equipment for Healthcare Providers</title>
+  <meta name="description" content="Quality-managed medical equipment supply for hospitals, clinics, and procurement teams. Traceable sourcing, compliance documentation, and reliable service.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="MedEquip Supply — Medical Equipment for Healthcare Providers">
+  <meta property="og:description" content="Quality-managed medical equipment supply for hospitals, clinics, and procurement teams. Traceable sourcing, compliance documentation, and reliable service.">
+  <meta property="og:url"         content="https://example.com/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       Navigation
+       ===================================================== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation"
+         data-i18n-attr="aria-label:nav.ariaLabel">
+
+      <a href="/" class="nav__logo" aria-label="MedEquip Supply home"
+         data-i18n-attr="aria-label:nav.logoAriaLabel">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <!-- Simple cross / plus mark -->
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <rect x="7" y="2" width="4" height="14" rx="1" fill="#fff"/>
+            <rect x="2" y="7" width="14" height="4" rx="1" fill="#fff"/>
+          </svg>
+        </span>
+        MedEquip Supply
+      </a>
+
+      <!-- Mobile toggle -->
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links"
+              aria-label="Toggle navigation menu"
+              data-i18n-attr="aria-label:nav.toggleAriaLabel">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+        <li><a href="quality.html"  data-i18n="nav.quality">Quality</a></li>
+        <li><a href="about.html"    data-i18n="nav.about">About</a></li>
+        <li><a href="contact.html"  data-i18n="nav.contact">Contact</a></li>
+    
+      </ul>
+
+      <!-- Language switcher — always visible (desktop row + mobile header bar) -->
+      <div class="lang-switcher" role="group" aria-label="Select language"
+           data-i18n-attr="aria-label:nav.langSwitcherLabel">
+        <button class="lang-switcher__btn" data-lang="en"
+                aria-current="true" type="button">EN</button>
+        <button class="lang-switcher__btn" data-lang="it"
+                aria-current="false" type="button">IT</button>
+      </div>
+ 
+      <div class="nav__cta-wrap">
+        <a href="contact.html" class="btn btn--primary nav__cta"
+           data-i18n="nav.cta">Get in Touch</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- =====================================================
+         Hero
+         ===================================================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__inner container">
+
+        <div class="hero__content">
+          <span class="hero__eyebrow"
+                data-i18n="hero.eyebrow">Medical Equipment Supplier</span>
+          <h1 class="hero__title" id="hero-heading"
+              data-i18n="hero.title">
+            Reliable Medical Equipment Supply for Healthcare Providers
+          </h1>
+          <p class="hero__desc" data-i18n="hero.desc">
+            Quality-managed sourcing, traceability, and documentation for
+            hospitals, clinics, and procurement teams — with the support you
+            need at every stage.
+          </p>
+          <div class="hero__actions">
+            <a href="products.html" class="btn btn--primary"
+               data-i18n="hero.btnProducts">View Our Products</a>
+            <a href="contact.html" class="btn btn--ghost"
+               data-i18n="hero.btnContact">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__visual-placeholder">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+              <rect x="10" y="10" width="60" height="60" rx="8" stroke="#1a6fa8" stroke-width="2" fill="none"/>
+              <rect x="36" y="20" width="8" height="40" rx="2" fill="#1a6fa8" opacity="0.3"/>
+              <rect x="20" y="36" width="40" height="8" rx="2" fill="#1a6fa8" opacity="0.3"/>
+              <circle cx="40" cy="40" r="6" fill="#1a6fa8" opacity="0.5"/>
+            </svg>
+            <p data-i18n="hero.visualAlt">Product image placeholder</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Product Categories
+         ===================================================== -->
+    <section class="section" aria-labelledby="categories-heading">
+      <div class="container">
+
+        <header class="categories__header">
+          <span class="section__label"
+                data-i18n="categories.sectionLabel">Our Portfolio</span>
+          <h2 class="section__heading" id="categories-heading"
+              data-i18n="categories.heading">What We Supply</h2>
+          <p class="section__sub" data-i18n="categories.sub">
+            We supply a broad range of medical equipment categories to support
+            facility procurement needs.
+          </p>
+        </header>
+
+        <ul class="categories__grid" role="list">
+
+          <li>
+            <a href="products.html" class="category-card">
+              <div class="category-card__icon" aria-hidden="true">
+                <!-- Diagnostic / scan icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+                </svg>
+              </div>
+              <span class="category-card__name"
+                    data-i18n="categories.diagnosticName">Diagnostic Imaging</span>
+              <span class="category-card__desc"
+                    data-i18n="categories.diagnosticDesc">Ultrasound units, X-ray systems, and portable imaging devices for clinical and hospital use.</span>
+              <span class="category-card__link">
+                <span data-i18n="categories.diagnosticLink">Explore category</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="products.html" class="category-card">
+              <div class="category-card__icon" aria-hidden="true">
+                <!-- Scalpel / surgical icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2 2 22l10-6 10 6L12 2Z"/>
+                </svg>
+              </div>
+              <span class="category-card__name"
+                    data-i18n="categories.surgicalName">Surgical Instruments</span>
+              <span class="category-card__desc"
+                    data-i18n="categories.surgicalDesc">Procedure-grade instruments and sets for operating theatres and outpatient facilities.</span>
+              <span class="category-card__link">
+                <span data-i18n="categories.surgicalLink">Explore category</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="products.html" class="category-card">
+              <div class="category-card__icon" aria-hidden="true">
+                <!-- Heartbeat / monitor icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+              <span class="category-card__name"
+                    data-i18n="categories.monitoringName">Patient Monitoring</span>
+              <span class="category-card__desc"
+                    data-i18n="categories.monitoringDesc">Bedside monitors, pulse oximeters, and telemetry systems for continuous patient observation.</span>
+              <span class="category-card__link">
+                <span data-i18n="categories.monitoringLink">Explore category</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="products.html" class="category-card">
+              <div class="category-card__icon" aria-hidden="true">
+                <!-- Drip / infusion icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v20M5 9h14M7 5h10"/>
+                  <path d="M8 15c0 2.2 1.8 4 4 4s4-1.8 4-4"/>
+                </svg>
+              </div>
+              <span class="category-card__name"
+                    data-i18n="categories.infusionName">Infusion Systems</span>
+              <span class="category-card__desc"
+                    data-i18n="categories.infusionDesc">IV pumps, infusion sets, and accessories designed for accurate and safe fluid delivery.</span>
+              <span class="category-card__link">
+                <span data-i18n="categories.infusionLink">Explore category</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="products.html" class="category-card">
+              <div class="category-card__icon" aria-hidden="true">
+                <!-- Shield / sterilization icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <span class="category-card__name"
+                    data-i18n-html="categories.sterilName">Sterilization &amp; Disinfection</span>
+              <span class="category-card__desc"
+                    data-i18n="categories.sterilDesc">Autoclaves, sterilization pouches, and surface disinfection systems for infection control.</span>
+              <span class="category-card__link">
+                <span data-i18n="categories.sterilLink">Explore category</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="products.html" class="category-card">
+              <div class="category-card__icon" aria-hidden="true">
+                <!-- Person / mobility icon -->
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="5" r="2"/>
+                  <path d="M12 7v8"/>
+                  <path d="M8 21l4-6 4 6"/>
+                  <path d="M7 12h10"/>
+                </svg>
+              </div>
+              <span class="category-card__name"
+                    data-i18n-html="categories.mobilityName">Mobility &amp; Rehabilitation</span>
+              <span class="category-card__desc"
+                    data-i18n="categories.mobilityDesc">Wheelchairs, walking aids, and rehabilitation equipment supporting patient recovery programs.</span>
+              <span class="category-card__link">
+                <span data-i18n="categories.mobilityLink">Explore category</span>
+                <span aria-hidden="true">→</span>
+              </span>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Quality & Compliance
+         ===================================================== -->
+    <section class="section section--surface" aria-labelledby="quality-heading">
+      <div class="container">
+        <div class="quality__inner">
+
+          <div class="quality__content">
+            <span class="section__label"
+                  data-i18n-html="quality.sectionLabel">Quality &amp; Compliance</span>
+            <h2 class="section__heading" id="quality-heading"
+                data-i18n="quality.heading">
+              Processes You Can Rely On
+            </h2>
+            <p class="section__sub" data-i18n="quality.sub">
+              We operate quality-managed supply processes with a focus on
+              traceability, documentation, and audit readiness — supporting
+              your procurement and compliance requirements.
+            </p>
+
+            <div class="quality__badges" role="list" aria-label="Quality commitments"
+                 data-i18n-attr="aria-label:quality.badgesAriaLabel">
+
+              <div class="quality-badge" role="listitem">
+                <div class="quality-badge__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="quality-badge__title"
+                       data-i18n="quality.badge1Title">Documented Processes</div>
+                  <div class="quality-badge__text"
+                       data-i18n="quality.badge1Text">Full documentation packages available upon request, including product specifications, declarations of conformity, and supply chain records.</div>
+                </div>
+              </div>
+
+              <div class="quality-badge" role="listitem">
+                <div class="quality-badge__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 11 12 14 22 4"/>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="quality-badge__title"
+                       data-i18n="quality.badge2Title">End-to-End Traceability</div>
+                  <div class="quality-badge__text"
+                       data-i18n="quality.badge2Text">Lot and batch traceability across our supply chain, supporting recall management and regulatory inspection requirements.</div>
+                </div>
+              </div>
+
+              <div class="quality-badge" role="listitem">
+                <div class="quality-badge__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <polyline points="9 12 11 14 15 10"/>
+                  </svg>
+                </div>
+                <div>
+                  <div class="quality-badge__title"
+                       data-i18n="quality.badge3Title">Audit-Ready</div>
+                  <div class="quality-badge__text"
+                       data-i18n="quality.badge3Text">Compliant with applicable standards where required. Our records and processes are structured to support your facility's audit and accreditation activities.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Visual panel (decorative) -->
+          <div class="quality__visual" aria-hidden="true">
+            <div class="quality__visual-inner">
+              <div class="quality__stat">
+                <span class="quality__stat-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                  </svg>
+                </span>
+                <div>
+                  <div class="quality__stat-label"
+                       data-i18n="quality.stat1Label">Documentation</div>
+                  <div class="quality__stat-value"
+                       data-i18n="quality.stat1Value">Available on Request</div>
+                </div>
+              </div>
+              <div class="quality__stat">
+                <span class="quality__stat-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </span>
+                <div>
+                  <div class="quality__stat-label"
+                       data-i18n="quality.stat2Label">Supply Chain</div>
+                  <div class="quality__stat-value"
+                       data-i18n="quality.stat2Value">Fully Traceable</div>
+                </div>
+              </div>
+              <div class="quality__stat">
+                <span class="quality__stat-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                </span>
+                <div>
+                  <div class="quality__stat-label"
+                       data-i18n="quality.stat3Label">Standards</div>
+                  <div class="quality__stat-value"
+                       data-i18n="quality.stat3Value">Compliant Where Applicable</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Why Choose Us
+         ===================================================== -->
+    <section class="section" aria-labelledby="pillars-heading">
+      <div class="container">
+
+        <header class="pillars__header">
+          <span class="section__label"
+                data-i18n="pillars.sectionLabel">Why Work With Us</span>
+          <h2 class="section__heading" id="pillars-heading"
+              data-i18n="pillars.heading">Built for Healthcare Procurement</h2>
+          <p class="section__sub" data-i18n="pillars.sub">
+            We understand the demands of healthcare supply — reliability,
+            compliance, and clear communication are central to everything we do.
+          </p>
+        </header>
+
+        <ul class="pillars__grid" role="list">
+
+          <li class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                <line x1="12" y1="20" x2="12.01" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="pillar__heading"
+                data-i18n="pillars.pillar1Heading">Reliable Supply Chain</h3>
+            <p class="pillar__text" data-i18n="pillars.pillar1Text">
+              Consistent stock availability and managed lead times, so your
+              facility procurement stays on schedule.
+            </p>
+          </li>
+
+          <li class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="pillar__heading"
+                data-i18n="pillars.pillar2Heading">Procurement Support</h3>
+            <p class="pillar__text" data-i18n="pillars.pillar2Text">
+              We work alongside procurement teams to match specifications,
+              provide quotations, and coordinate delivery requirements.
+            </p>
+          </li>
+
+          <li class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 5a2 2 0 0 1 1.99-2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.34a16 16 0 0 0 6 6l.92-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.7 18l.22-.01a2 2 0 0 0 .08-.07z"/>
+              </svg>
+            </div>
+            <h3 class="pillar__heading"
+                data-i18n="pillars.pillar3Heading">Responsive Service</h3>
+            <p class="pillar__text" data-i18n="pillars.pillar3Text">
+              Prompt responses to enquiries, order updates, and after-sale
+              support — with clear points of contact throughout.
+            </p>
+          </li>
+
+          <li class="pillar">
+            <div class="pillar__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+            </div>
+            <h3 class="pillar__heading"
+                data-i18n-html="pillars.pillar4Heading">Documentation &amp; Traceability</h3>
+            <p class="pillar__text" data-i18n="pillars.pillar4Text">
+              Detailed records, declarations, and traceability data available
+              to support your facility's compliance and audit requirements.
+            </p>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         Contact CTA Banner
+         ===================================================== -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 class="cta-banner__heading" id="cta-heading"
+            data-i18n="cta.heading">
+          Ready to source medical equipment for your facility?
+        </h2>
+        <p class="cta-banner__sub" data-i18n="cta.sub">
+          Send us your requirements and our team will respond with product
+          availability, specifications, and pricing details.
+        </p>
+        <a href="contact.html" class="btn btn--primary"
+           data-i18n="cta.btn">Get in Touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       Footer
+       ===================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div>
+          <div class="footer__brand-name">
+            <span aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <rect x="7" y="2" width="4" height="14" rx="1" fill="#1a6fa8"/>
+                <rect x="2" y="7" width="14" height="4" rx="1" fill="#1a6fa8"/>
+              </svg>
+            </span>
+            MedEquip Supply
+          </div>
+          <p class="footer__tagline" data-i18n="footer.tagline">
+            Quality-managed medical equipment supply for hospitals, clinics, and healthcare procurement teams.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer__col-title"
+               data-i18n="footer.navColTitle">Navigation</div>
+          <ul class="footer__links" role="list">
+            <li><a href="products.html" data-i18n="footer.navProducts">Products</a></li>
+            <li><a href="quality.html"  data-i18n-html="footer.navQuality">Quality &amp; Certifications</a></li>
+            <li><a href="about.html"    data-i18n="footer.navAbout">About Us</a></li>
+            <li><a href="contact.html"  data-i18n="footer.navContact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__col-title"
+               data-i18n="footer.contactColTitle">Contact</div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9993;</span>
+            <span>info@medequipsupply.example</span>
+          </div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9742;</span>
+            <span>+1 (000) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <span aria-hidden="true">&#9679;</span>
+            <span>123 Placeholder Street<br>City, Country</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__disclaimer" data-i18n="footer.disclaimer">
+          Product information is for healthcare professionals and procurement use only.
+          All product specifications and availability are subject to change without notice.
+        </p>
+        <p class="footer__copyright">
+          &copy; <span id="footer-year">2025</span>
+          <span data-i18n="footer.copyrightSuffix">MedEquip Supply. All rights reserved.</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

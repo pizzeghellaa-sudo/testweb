@@ -98,7 +98,7 @@
         navContact: 'Contact',
         contactColTitle: 'Contact',
         disclaimer: 'Product information is for healthcare professionals and procurement use only. All product specifications and availability are subject to change without notice.',
-        copyrightSuffix: 'MedEquip Supply. All rights reserved.'
+        copyrightSuffix: 'MedEquip Supply. All rights reserved. Made with AI.'
       },
       products: {
         meta: {
@@ -346,7 +346,7 @@
         navContact: 'Contatti',
         contactColTitle: 'Contatti',
         disclaimer: 'Le informazioni sui prodotti sono destinate esclusivamente a professionisti sanitari e uffici acquisti. Tutte le specifiche e la disponibilit\u00e0 dei prodotti sono soggette a variazioni senza preavviso.',
-        copyrightSuffix: 'MedEquip Supply. Tutti i diritti riservati.'
+        copyrightSuffix: 'MedEquip Supply. Tutti i diritti riservati. Creato con AI.'
       },
       products: {
         meta: {
